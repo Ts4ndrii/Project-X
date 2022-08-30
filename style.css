@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .timer__numbers {
+    display: flex;
+    margin: 0 auto;
+} */
+
+.number-card {
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.btn__open {
+    margin: 40px;
+}
+
+.popup__close {
+    cursor: pointer;
+    width: 30px;
+    opacity: 0.7;
+}
+
+.form__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.451);
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+}
+
+.form__bg.active {
+    pointer-events: all;
+    opacity: 1;
+} 
+
+.card__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: #fff;
+    padding: 25px;
+    
+}
+
+.task-manager {
+    display: none;
+}
+
+.task-manager.active {
+    display: block;
+}
